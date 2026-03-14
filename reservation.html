@@ -12,30 +12,35 @@
     <h2>réservation de ticket pour un match. </h2>
     <div class="commantaire m-5 justify-content-center">
 
-        <form >
+        <form class="form" id="form" >
+            <p class="bg-success" id="success"></p>
             <div class="row">
             <div class="col-md-6">
+                <p class="bg-danger" id="errurname"></p>
                 <label for="name">Nom complet</label>
                 <input type="text"  id="name" required>
             </div>
             <div class="col-md-6">
-                <label for="Email">Email</label>
-                <input type="email"  id="Email" required>
+              <p class="bg-danger" id="erruremail"></p>
+                <label for="email">Email</label>
+                <input type="email"  id="email" required>
             </div>
             </div>
 
             <div>
-                <label for="Telephone">Téléphone</label>
-                <input type="tel"  id="Telephone" required>
+               <p class="bg-danger" id="errurtele"></p>
+                <label for="telephone">Téléphone</label>
+                <input type="tel"  id="telephone" required>
             </div>
             <div>
-                <label for="match">Match</label>
-                <select name="match" id="match">
-                </div>
+            <p class="bg-danger" id="errurmatch"></p>
+            <label for="match">Match</label>
+            <select name="match" id="match">
                 <option value="match1">FC GenV vs OC Youssoufia — 15/03/2026</option>
                 <option value="match2">FC GenV vs FC Bayern — 22/03/2026</option>
                 <option value="match3">FC GenV vs Madrid CF — 05/04/2026</option>
             </select>
+            </div>
             <div>
                 <label for="tribune">tribune</label>
                 <input type="radio" name="place" id="tribune" value="tribune">
@@ -48,6 +53,7 @@
                 
             </div>
             <div>
+               <p class="bg-danger" id="errurticket"></p>
                 <label for="nticket">Nombre de tickets</label>
                 <input type="number" name="nticket" id="nticket" min="1" max="10">
             </div>
@@ -67,7 +73,7 @@
         </form>
     </div>
 
-
+      <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
