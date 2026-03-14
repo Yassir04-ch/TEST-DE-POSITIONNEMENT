@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title> réservation de ticket</title>
+</head>
+<body>
+    <h2>réservation de ticket pour un match. </h2>
+    <div class="commantaire m-5 justify-content-center">
+
+        <form >
+            <div class="row">
+            <div class="col-md-6">
+                <label for="name">Nom complet</label>
+                <input type="text"  id="name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="Email">Email</label>
+                <input type="email"  id="Email" required>
+            </div>
+            </div>
+
+            <div>
+                <label for="Telephone">Téléphone</label>
+                <input type="tel"  id="Telephone" required>
+            </div>
+            <div>
+                <label for="match">Match</label>
+                <select name="match" id="match">
+                </div>
+                <option value="match1">FC GenV vs OC Youssoufia — 15/03/2026</option>
+                <option value="match2">FC GenV vs FC Bayern — 22/03/2026</option>
+                <option value="match3">FC GenV vs Madrid CF — 05/04/2026</option>
+            </select>
+            <div>
+                <label for="tribune">tribune</label>
+                <input type="radio" name="place" id="tribune" value="tribune">
+                
+                <label for="Virage">Virage</label>
+                <input type="radio" name="place" id="Virage" value="Virage">
+                
+                <label for="Pelouse">Pelouse</label>
+                <input type="radio" name="place" id="Pelouse" value="Pelouse">
+                
+            </div>
+            <div>
+                <label for="nticket">Nombre de tickets</label>
+                <input type="number" name="nticket" id="nticket" min="1" max="10">
+            </div>
+            
+            <div>
+                <label for="commantaire">Commentaire</label>
+                <textarea name="commantaire" id="commantaire"></textarea>
+            </div>
+            
+            <div>
+            </label for="accepte">J'accepte les conditions générales<label>
+                <input type="checkbox" id="accepte" required>
+            </div>
+            
+            <button class="btn btn-success" type="submit">Réserver mon ticket</button>
+            
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

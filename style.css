@@ -1,0 +1,52 @@
+body{
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+header{
+    background-color: #27AE60;
+    color:white;
+    padding: 20px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+ul a{
+    color:white;
+    text-decoration:none;
+}
+ul a:hover{
+     color:#0b230b;
+}
+
+section.match{
+    border-left:4px solid red;
+    background-color:white;
+    padding:15px;
+    box-shadow:5px 5px 30px black
+}
+form input ,form select , form textarea{
+    width:100%;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid gray;
+}
+
+form button{
+    background-color: #27AE60;
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 6px;
+}
+form button:hover{
+        background-color:#1f8b4c;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background:#333;
+    color:#eee;
+}
